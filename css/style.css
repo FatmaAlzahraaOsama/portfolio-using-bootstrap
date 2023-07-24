@@ -1,0 +1,331 @@
+
+:root{
+    --main-color:rgb(52,52,52);
+}
+section{
+    padding: 80px 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.main-color{
+    color:var(--main-color);
+}
+.navbar-nav .nav-link.active,.navbar-nav .nav-link:hover{
+    color: var(--main-color);
+
+}
+.navbar-nav .nav-link{
+    font-family:Poppins, sans-serif;
+    font-size: 14px;
+}
+.collapse a {
+    position: relative;
+}
+
+.collapse a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 3px;
+    width: 0px;
+    left: 0px;
+    bottom: -2px;
+    transition: width 2s;
+}
+
+.collapse a:hover::after {
+    width: 100%;
+}
+#home{
+    background-image:url(../img/img/bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+#home .layer{
+    min-height: 100vh;
+
+}
+#home .social li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color:rgba(0, 0,0, 0.4);
+  }
+  #home .social li:hover{
+      border-color: var(--main-color);
+      color: var(--main-color);
+  }
+  #home h1::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0%{content:"a|"}
+    2.5%{content:"a D|"}
+    5%{content:"a De|"}
+    7.5%{content:"a Des|"}
+    10%{content:"a Desi|"}
+    12.5%{content:"a Desig|"}
+    15%{content:"a Design|"}
+    17.5%{content:"a Designe|"}
+    20%{content:"a Designer|"}
+    22.5%{content:"a Designer|"}
+    25%{content:"a Designer|"}
+    27.5%{content:"a Designer|"}
+    30%{content:"a Designer|"}
+    32.5%{content:"a Design|"}
+    35%{content:"a Desi|"}
+    37.5%{content:"a De|"}
+    40%{content:"a|"}
+    42.5%{content:"|"}
+    45%{content:"a|"}
+    47.5%{content:"a F|"}
+    50%{content:"a Fr|"}
+    52.5%{content:"a Fre|"}
+    55%{content:"a Free|"}
+    57.5%{content:"a Freel|"}
+    60%{content:"a Freela|"}
+    62.5%{content:"a Freelan|"}
+    65%{content:"a Freelanc|"}
+    67.5%{content:"a Freelance|"}
+    70%{content:"a Freelancer|"}
+    72.5%{content:"a Freelancer|"}
+    75%{content:"a Freelancer|"}
+    77.5%{content:"a Freelancer|"}
+    80%{content:"a Freela|"}
+    82.5%{content:"a Freel|"}
+    85%{content:"a Free|"}
+    87.5%{content:"a Fre|"}
+    90%{content:"a Fr|"}
+    92.5%{content:"a F|"}
+    95%{content:"a|"}
+    100%{content:"|"}
+}
+
+#about .image-about::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../img/img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+
+}
+#about .download,#contact .download{
+    all:unset;
+    display:inline-block;
+    padding: 10px 20px;
+    border: 2px solid  var(--main-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #fff;
+    color:var(--main-color);
+    font-size: 13px;
+
+    }
+#about .download:hover,#contact .download:hover{
+        background-color: var(--main-color);
+        color:#fff;
+    }
+
+    .main-title h3::after
+        {
+            content: '';
+            width: 40%;
+            height: 30px;
+            background-image: url(../img/img/dots.png);
+            background-repeat: repeat;
+            position: absolute;
+            bottom: 45px;
+            left: 165px;
+            z-index: -1;
+        }
+        .main-title h3{
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 44px;
+            font-family: Montserrat, sans-serif;
+            color: #343434;
+        }
+        .service-icon .icon-circl,#contact .form-icon{
+            transition: all 500ms ease;
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+            border-radius: 50%;
+            line-height: 1.55;
+            margin: 20px auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            font-family: Montserrat, sans-serif;;
+        }
+        .service-icon .icon-circl:hover,#contact .form-icon:hover{
+            background-color: var(--main-color);
+            color: #fff;
+        }
+    
+#work .nav-pills .nav-link.active,#work .nav-pills .nav-link{
+  position: relative;
+}
+#work .nav-pills .nav-link{
+    background-color: #fff;
+    color: var(--main-color);
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #222222;
+
+}
+#work .nav-pills .nav-link.active::after,#work .nav-pills .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 3px;
+    width: 80%;
+    left: 8px;
+    bottom: -2px;
+    
+}
+#work .work-text{
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    top: 40%;
+    transition: top 1s ,opacity 1s;
+}
+
+/* #work .image img
+{
+    transition: transform 1s;
+}
+#work .image:hover img{
+    transform: scale(1.1);
+} */
+#work .image .layer3{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all .5s;
+    z-index: 2;
+    transform: translateY(10px);
+}
+#work .image .layer3:hover{
+    opacity:1!important;
+}
+#work .image:hover .work-text{
+    top: 50%;
+    opacity:1!important;
+
+}
+#work .social li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color:#000;
+    color: #fff;
+  }
+  #work .social li:hover{
+      border-color: var(--main-color);
+      color: var(--main-color);
+  }
+  #clients .client-img{
+    width: 10%;
+  }
+#clients .layer4,#services .layer4{
+    background-color:#F7F7F7;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    margin: 5px 5px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 50%;
+    border: 0;
+
+}
+.clients2-icon .icon-circl{
+    transition: all 500ms ease;
+    height: 65px;
+    width: 65px;
+    font-size: 2.7rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    color: #000;
+}
+#blog .work-content img{
+    transition: transform 2s;
+}
+#blog .work-content{
+    overflow: hidden;
+}
+#blog .work-content:hover img{
+ transform: scale(1.2);
+}
+#contact button, input, optgroup, select, textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4
+}
+.read{
+    border-bottom: 2px solid #333;
+}
+.layer-f{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #1C1C1C;
+}
+.layer-f p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #748182;
+    font-family: Poppins, sans-serif;;
+}
+#contact .download{
+    background-color:var(--main-color);
+    color: #fff;
+}
+#contact .download:hover{
+    background-color:#fff;
+    color: var(--main-color);
+
+}
